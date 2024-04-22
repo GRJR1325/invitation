@@ -1,389 +1,550 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <title>Invitacion</title>
-    <meta charset="UTF-8">
-    <meta name="author" content="JRGR1325">
-    <meta name="description" content="Invitacion Web para festejar los 15 años">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+    <meta charset="UTF-8" />
+    <meta name="author" content="JRGR1325" />
+    <meta
+      name="description"
+      content="Invitacion Web para festejar los 15 años"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <!-- ICONS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
 
     <!-- CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <link rel="stylesheet" href='/styles.css'>
-</head>
-<body>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    
     <audio autoplay loop>
-        <source src="music.mp3" type="audio/mpeg">
-    </audio> 
+      <source src="music.mp3" type="audio/mpeg" />
+    </audio>
     <main>
-        <div class="row">
-
-
-            <!-- FOTO PRINCIPAL -->
-            <div style="height: 800px;" class="parallax-container">
-                <div class="parallax">
-                    <img class="main-image" src="images/ana2.png"/></div>
-                    <div class="rose-overlay">
-                    <h3 class="center-align title">- MIS XV AÑOS -</h3>   
-                    <h1 class="name center-align">Charliza Eileene</h1>
-                    <div class="bubbles">
-                      <div class="bubble"></div>
-                      <div class="bubble"></div>
-                      <div class="bubble"></div>
-                      <div class="bubble"></div>
-                      <div class="bubble"></div>
-                      <div class="bubble"></div>
-                      <div class="bubble"></div>
-                      <div class="bubble"></div>
-                      <div class="bubble"></div>
-                      <div class="bubble"></div>
-                    </div>
-                   <div class="col s2 l2"></div>
-                   
-                   <div class="col l1"></div>
-
-                    <!-- DIAS -->
-                    <div class="time-container col s2 m1 l1 time-unit">
-                        <p id="dias" class="pink-text center-align"></p>
-                        <p class="flow-text center-align">dias</p>
-                    </div>
-
-                    <div class="col s1 l1 "></div>
-
-                    <!-- HORAS -->
-                    <div class="time-container col s2 m1 l1 time-unit">
-                        <p id="horas" class="pink-text center-align"></p>
-                        <p class="flow-text center-align">horas</p>
-                    </div>
-
-                    <div class="col s1 l1"></div>
-
-                    <!-- MINUTOS -->
-                    <div class="time-container col s2 m1 l1 time-unit">
-                        <p id="minutos" class="pink-text center-align"></p>
-                        <p class="flow-text center-align">minutos</p>
-                    </div>
-
-                    <div class="col s2 l1"></div>
-                </div> 
+      <div class="row">
+        <!-- FOTO PRINCIPAL -->
+        <div style="height: 800px" class="parallax-container">
+          <div class="parallax">
+            <img class="main-image" src="images/ana2.png" />
+          </div>
+          <div class="rose-overlay">
+            <h3 class="center-align title">- MIS XV AÑOS -</h3>
+            <h1 class="name center-align">Charliza Eileene</h1>
+            <div class="bubbles">
+              <div class="bubble"></div>
+              <div class="bubble"></div>
+              <div class="bubble"></div>
+              <div class="bubble"></div>
+              <div class="bubble"></div>
+              <div class="bubble"></div>
+              <div class="bubble"></div>
+              <div class="bubble"></div>
+              <div class="bubble"></div>
+              <div class="bubble"></div>
             </div>
 
-            <!-- BANNER ROSA -->
-            <div class="section pink reveal">
-                <div class="row container pink center-align" >
-                    <div class="col s12 m12 l3"></div>
+            <div class="col s12 m12 l12 center-align">
+              <div class="col s2 m4 l4"></div>
 
-                    <div class="col s12 m12 l6 white border-black" >
-                        <h3 class="text1 center-align  reveal">CON LA BENDICIÓN DE MIS PADRES</h3>
-                        <h3 class="text2  reveal">Victor Manuel</h3>
-                        <h3 class="text2  reveal">-------------</h3>
-                        <h3 class="text1  reveal">TENEMOS EL HONOR DE INVITARTE A LA CELEBRACIÓN DE MIS 15 AÑOS</h3>
-                        <h3 class="text3  reveal">Charliza</h3>
-                    </div>
-                    <div class="col s12 m12 l3"></div>
+              <!-- DIAS -->
+              <div class="time-container col s2 m1 l1 time-unit">
+                <p id="dias" class="pink-text center-align"></p>
+                <p class="flow-text center-align">dias</p>
+              </div>
 
-                </div>
+              <div class="col s1 m1 l1"></div>
+
+              <!-- HORAS -->
+              <div class="time-container col s2 m1 l1 time-unit">
+                <p id="horas" class="pink-text center-align"></p>
+                <p class="flow-text center-align">horas</p>
+              </div>
+
+              <div class="col s1 m1 l1"></div>
+
+              <!-- MINUTOS -->
+              <div class="time-container col s2 m1 l1 time-unit">
+                <p id="minutos" class="pink-text center-align"></p>
+                <p class="flow-text center-align">minutos</p>
+              </div>
+
+              <div class="col s2 m4 l4"></div>
             </div>
-
-
-            <!-- PIE PAGINA -->
-            <div class="col s12 m12 l12 reveal">
-                <br>
-                <br><br><br>
-                <h4 class="center-align title pink-text lighten-1 revealX">Te esperamos en la  misa de acción de gracias, llevada a cabo el dia sabado 27 de julio a las 13:00 horas.</h4> 
-                <br>
-                <br>
-                <br><br><br>
-            </div>
-
-
-            <!-- DATOS MISA -->
-            <div class="col s12 m12 l6  center-align">
-                <img class="church-image reveal" src='images/iglesia.png'/>
-            </div>
-
-
-
-            <div class="col s12 m12 l6 center-align revealX">
-
-                <h4 class="flow-text bold">Ceremonia Religiosa</h4>
-
-                <div class="col s6 m12 l6">
-                    <i class="bi bi-building bi-lg" style="font-size: 4rem; color: red;"></i>
-                    <p class="flow-text">Parroquia Santa Maria Nativitas</p>
-                </div>
-
-
-                <div class="col s6 m12 l6">
-                    <i class="bi bi-geo-alt bi-lg" style="font-size: 4rem; color: red;"></i> 
-                    <p class="flow-text">Av. Adolfo López Mateos 5, El Centro, 43740 Santa María Nativitas, Hgo.</p>
-                    <br><br>
-                </div> 
-               
-
-                <div class="col s12 m12 l12">
-                    <iframe  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2650.4404694808163!2d-98.2983920743609!3d20.038340119878658!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d05a1d2e1dbb11%3A0xf23eac89f21413fd!2sParroquia%20Sta.%20Mar%C3%ADa%20Nativitas!5e0!3m2!1ses!2smx!4v1713588480464!5m2!1ses!2smx" width="600" height="300" style="border:0;"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-
-                </div> 
-
-            </div>
-
+          </div>
         </div>
-    
 
-            <!-- FOTO 2 -->
+        <!-- BANNER ROSA -->
+        <div class="section pink-fade reveal">
+          <div class="row container center-align">
+            <div class="col s12 m12 l3"></div>
 
-            <div class="parallax-container">
-                <div class="parallax">
-                  <img src="images/ana4.jpg">
-                </div>
+            <div class="col s12 m12 l6 white border-black">
+              <h3 class="text1 center-align reveal">
+                CON LA BENDICIÓN DE MIS PADRES
+              </h3>
+              <h3 class="text2 reveal">Victor Manuel</h3>
+              <h3 class="text2 reveal">-------------</h3>
+              <h3 class="text1 reveal">
+                TENEMOS EL HONOR DE INVITARTE A LA CELEBRACIÓN DE MIS 15 AÑOS
+              </h3>
+              <h3 class="text3 reveal">Charliza</h3>
             </div>
-            
-            <div class="section red darken-1 revealZ">
-                <div class="row container">
-                    <h3 class="white-text center-align">Despues de la ceremonia agradecemos tu presencia para continuar con la celebración.</h3>
-                </div>
-            </div>
-            <br>
-            <br>
-            <br>
-
-
-            <!-- CODIGOS DE Vestimenta Y FIESTA -->
-        <div class="row">
-
-
-            <div class="col s12 m12 l12 revealX">
-                <h4 class="center-align title grey-text darken-2">Codigos de Vestimenta</h4> 
-                <h5 class="center-align title">Formal</h5>
-            </div>
-            
-            
-            <div class="col s12 m12 l6 center-align reveal">
-                    <h4 class="center-align blue-text lighten-1">HOMBRE</h4>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" fill="blue" class="bi bi-person-standing" viewBox="0 0 16 16">
-                        <path d="M8 3a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3M6 6.75v8.5a.75.75 0 0 0 1.5 0V10.5a.5.5 0 0 1 1 0v4.75a.75.75 0 0 0 1.5 0v-8.5a.25.25 0 1 1 .5 0v2.5a.75.75 0 0 0 1.5 0V6.5a3 3 0 0 0-3-3H7a3 3 0 0 0-3 3v2.75a.75.75 0 0 0 1.5 0v-2.5a.25.25 0 0 1 .5 0"/>
-                    </svg>     
-                    <h5>Traje y corbata</h5>           
-            </div>
-            
-            
-            
-            <div class="col s12 m12 l6 center-align reveal">
-                        <h4 class="center-align pink-text lighten-1">MUJER</h4>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" fill="pink" class="bi bi-person-standing-dress" viewBox="0 0 16 16">
-                            <path d="M8 3a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3m-.5 12.25V12h1v3.25a.75.75 0 0 0 1.5 0V12h1l-1-5v-.215a.285.285 0 0 1 .56-.078l.793 2.777a.711.711 0 1 0 1.364-.405l-1.065-3.461A3 3 0 0 0 8.784 3.5H7.216a3 3 0 0 0-2.868 2.118L3.283 9.079a.711.711 0 1 0 1.365.405l.793-2.777a.285.285 0 0 1 .56.078V7l-1 5h1v3.25a.75.75 0 0 0 1.5 0Z"/>
-                        </svg>
-                        <h5>Vestido largo</h5>     
-                        <br><br><br><br><br>      
-            </div>
-
-
-
-            <div class="col s12 m12 l6 center-align revealX">
-                <h4 class="flow-text bold">Ceremonia de Celebración</h4>
-
-                <div class="col s6 m12 l6">
-                    <i class="bi bi-building bi-lg" style="font-size: 4rem; color: red;"></i>
-                    <p class="flow-text">Salon Diamante</p>
-                </div>
-
-
-                <div class="col s6 m12 l6">
-                    <i class="bi bi-geo-alt bi-lg" style="font-size: 4rem; color: red;"></i> 
-                    <p class="flow-text">Venustiano Carranza 327, Centro, 43740 Cuautepec, Hgo.</p>
-                    <br><br>
-                </div>                 <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d556.7881231449122!2d-98.31522295143422!3d20.035043720960545!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1ssalon%20diamante%20hgo!5e0!3m2!1sen!2smx!4v1713719031633!5m2!1sen!2smx" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
-
-            <div class="col s12 m12 l6  center-align revealZ">
-                <img class="church-image" src='images/salon'/>
-            </div>
+            <div class="col s12 m12 l3"></div>
+          </div>
         </div>
-        <br><br><br><br><br><br><br><br><br><br>
-        <section>
-            <div class="col s12 m12 l12 purple darken-2 white-text center-align" style="height: 60rem;">
-                <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-                <h1 class="white-text newfont reveal">¡<span class="newfont"  id="cantidadAssistance">0</span> personas ya han confirmado su asistencia!</h1>                   
-                <div class="col s12 m12 l1">
-                    <div class="firework" id="firework1">
-                        <div class="explosion"></div>
-                        <div class="explosion"></div>
-                        <div class="explosion"></div>
-                        <div class="explosion"></div>
-                        <div class="explosion"></div>
-                        <div class="explosion"></div>
-                        <div class="explosion"></div>
-                        <div class="explosion"></div>
-                        <div class="explosion"></div>
-                        <div class="explosion"></div>
-                        <div class="explosion"></div>
-                        <div class="explosion"></div>
-                    </div>
-                </div>
-                <div class="col l3"></div>
-                <div class="col s12 m12 l1">
-                    <div class="firework" id="firework2">
-                        <div class="explosion"></div>
-                        <div class="explosion"></div>
-                        <div class="explosion"></div>
-                        <div class="explosion"></div>
-                        <div class="explosion"></div>
-                        <div class="explosion"></div>
-                        <div class="explosion"></div>
-                        <div class="explosion"></div>
-                        <div class="explosion"></div>
-                        <div class="explosion"></div>
-                        <div class="explosion"></div>
-                        <div class="explosion"></div>
-                    </div>
-                </div>
-                <div class="col l3"></div>
-                <div class="col s12 m12 l1">
-                    <div class="firework" id="firework3">
-                        <div class="explosion"></div>
-                        <div class="explosion"></div>
-                        <div class="explosion"></div>
-                        <div class="explosion"></div>
-                        <div class="explosion"></div>
-                        <div class="explosion"></div>
-                        <div class="explosion"></div>
-                        <div class="explosion"></div>
-                        <div class="explosion"></div>
-                        <div class="explosion"></div>
-                        <div class="explosion"></div>
-                        <div class="explosion"></div>
-                    </div>
-                </div>
-                <div class="col l2"></div>
-                <div class="col s12 m12 l1">
-                    <div class="firework" id="firework4">
-                        <div class="explosion"></div>
-                        <div class="explosion"></div>
-                        <div class="explosion"></div>
-                        <div class="explosion"></div>
-                        <div class="explosion"></div>
-                        <div class="explosion"></div>
-                        <div class="explosion"></div>
-                        <div class="explosion"></div>
-                        <div class="explosion"></div>
-                        <div class="explosion"></div>
-                        <div class="explosion"></div>
-                        <div class="explosion"></div>
-                    </div>
-                </div>
-            </div>    
-        </section>
-        <section title="formulario">
-            <div class="row colorful center-align">
-                <div class="col s12 m12 l12 center-align">
-                    <h2 class="black-text newfont reveal">¿Qué esperas para confirmar tu asistencia?</h2>
-                </div>
-                <div class="col l3"></div>
-               
-                <form class="col s12 m12 l6 center-align revealZ" action="" id="contactForm">
-                    <div class="row center-align">
-                        <div class="input-field col s12 m12 l6">
-                            <input placeholder="Nombre" id="first_name" type="text" class="validate " required>
-                        </div>
-    
-                        <div class="input-field col s12 m12 l6">
-                            <input placeholder="Apellidos" id="last_name" type="text" class="validate" required>
-                        </div>
-    
-                        <div class="input-field col s12 m12 l12 center-align">
-                            <label for="assitence" class="center-align  black-text newfont">¿VAS A VENIR A MI FIESTA?</label>
-                            <br><br>
-                            <div class="col s12 m12 l2"></div>
-                           
-                            <div class="col s6 m6 l4">
-                                <p>
-                                    <label>
-                                        <input name="group1" id="si" type="radio" value="Si" onclick="habilitarInput()" required />
-                                        <span>Si</span>
-                                    </label>
-                                </p>
-                            </div>
-                            <div class="col s6 m6 l4">
-                                <p>
-                                    <label>
-                                        <input name="group1" id="no" type="radio" value="No" onclick="habilitarInput()" />
-                                        <span>No</span>
-                                    </label>
-                                </p>
-                            </div>
-                            <div class="col s12 m12 l2"></div>
-                            <br><br><br><br>
-                        </div>
 
-                        <div class="input-field col s12 m12 l6 center-align">
-                            <input placeholder="Cantidad de acompañantes" id="companion" type="number" class="validate" required min="1" max="20">
-                            <label class="black-text newfont center-align" for="companion">¿LLEVARAS A ALGUN ACOMPAÑANTE?</label>
-                        </div>
-    
-                        <div class="col s12 m12 l12">
-                            <div class="input-field col s12">
-                                <textarea id="message" class="materialize-textarea" placeholder="Maximo 500 caracteres"></textarea>
-                                <label for="message" class="newfont">Enviar Felicitacion</label>
-                            </div>
-                        </div>
-                        
-                        <div class="col s12 m12 l12 center-align">
-                            <div style="padding-left: 23rem;" class="inputBox center"> 
-                                <button class="button-56" role="button" type="submit">ENVIAR</button>
-                            </div>
-                        </div>
-                    </div>
-                </form>
+        <!-- PIE PAGINA -->
+        <div class="col s12 m12 l12 reveal">
+          <br />
+          <br /><br /><br />
+          <h4 class="center-align title pink-text lighten-1 revealX">
+            Te esperamos en la misa de acción de gracias, llevada a cabo el día
+            sabado 27 de Julio a las 13:00 horas.
+          </h4>
+          <br />
+          <br />
+          <br /><br /><br />
+        </div>
+
+        <!-- DATOS MISA -->
+        <div class="col s12 m12 l6 center-align">
+          <img class="church-image reveal" src="images/iglesia.png" />
+        </div>
+
+        <div class="col s12 m12 l6 center-align revealX">
+          <h4 class="flow-text bold">Ceremonia Religiosa</h4>
+
+          <div class="col s6 m6 l6">
+            <i
+              class="bi bi-building bi-lg"
+              style="font-size: 4rem; color: red"
+            ></i>
+            <p class="flow-text">Parroquia Santa Maria Nativitas</p>
+          </div>
+
+          <div class="col s6 m6 l6">
+            <i
+              class="bi bi-geo-alt bi-lg"
+              style="font-size: 4rem; color: red"
+            ></i>
+            <p class="flow-text">
+              Av. Adolfo López Mateos 5, El Centro, 43740 Santa María Nativitas,
+              Hgo.
+            </p>
+            <br /><br />
+          </div>
+
+          <div class="col s12 m12 l12">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2650.4404694808163!2d-98.2983920743609!3d20.038340119878658!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d05a1d2e1dbb11%3A0xf23eac89f21413fd!2sParroquia%20Sta.%20Mar%C3%ADa%20Nativitas!5e0!3m2!1ses!2smx!4v1713588480464!5m2!1ses!2smx"
+              width="500"
+              height="300"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+
+      <!-- FOTO 2 -->
+
+      <div class="parallax-container">
+        <div class="parallax">
+          <img src="images/ana4.jpg" />
+        </div>
+      </div>
+
+      <div class="section red darken-1 revealZ">
+        <div class="row container">
+          <h3 class="white-text center-align">
+            Despues de la ceremonia Religiosa agradecemos tu presencia para
+            continuar con la celebración.
+          </h3>
+        </div>
+      </div>
+      <br />
+      <br />
+      <br />
+
+      <!-- CODIGOS DE Vestimenta Y FIESTA -->
+      <div class="row">
+        <div class="col s12 m12 l12 revealX">
+          <h4 class="center-align title grey-text darken-2">
+            Codigos de Vestimenta
+          </h4>
+          <h5 class="center-align title black-text">Formal</h5>
+        </div>
+
+        <div class="col s12 m12 l6 center-align reveal">
+          <h4 class="center-align blue-text lighten-1">HOMBRE</h4>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="100"
+            height="100"
+            fill="blue"
+            class="bi bi-person-standing"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M8 3a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3M6 6.75v8.5a.75.75 0 0 0 1.5 0V10.5a.5.5 0 0 1 1 0v4.75a.75.75 0 0 0 1.5 0v-8.5a.25.25 0 1 1 .5 0v2.5a.75.75 0 0 0 1.5 0V6.5a3 3 0 0 0-3-3H7a3 3 0 0 0-3 3v2.75a.75.75 0 0 0 1.5 0v-2.5a.25.25 0 0 1 .5 0"
+            />
+          </svg>
+          <h5>Traje y corbata</h5>
+        </div>
+
+        <div class="col s12 m12 l6 center-align reveal">
+          <h4 class="center-align pink-text lighten-1">MUJER</h4>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="100"
+            height="100"
+            fill="pink"
+            class="bi bi-person-standing-dress"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M8 3a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3m-.5 12.25V12h1v3.25a.75.75 0 0 0 1.5 0V12h1l-1-5v-.215a.285.285 0 0 1 .56-.078l.793 2.777a.711.711 0 1 0 1.364-.405l-1.065-3.461A3 3 0 0 0 8.784 3.5H7.216a3 3 0 0 0-2.868 2.118L3.283 9.079a.711.711 0 1 0 1.365.405l.793-2.777a.285.285 0 0 1 .56.078V7l-1 5h1v3.25a.75.75 0 0 0 1.5 0Z"
+            />
+          </svg>
+          <h5>Vestido largo</h5>
+          <br /><br /><br /><br /><br />
+        </div>
+
+        <div class="col s12 m12 l6 center-align revealX">
+          <h4 class="flow-text bold">Ceremonia de Celebración</h4>
+
+          <div class="col s6 m12 l6">
+            <i
+              class="bi bi-building bi-lg"
+              style="font-size: 4rem; color: red"
+            ></i>
+            <p class="flow-text">Salon Diamante</p>
+          </div>
+
+          <div class="col s6 m12 l6">
+            <i
+              class="bi bi-geo-alt bi-lg"
+              style="font-size: 4rem; color: red"
+            ></i>
+            <p class="flow-text">
+              Venustiano Carranza 327, Centro, 43740 Cuautepec, Hgo.
+            </p>
+            <br /><br />
+          </div>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d556.7881231449122!2d-98.31522295143422!3d20.035043720960545!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1ssalon%20diamante%20hgo!5e0!3m2!1sen!2smx!4v1713719031633!5m2!1sen!2smx"
+            width="400"
+            height="300"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+
+        <div class="col s12 m12 l6 center-align revealZ">
+          <img class="church-image" src="images/salon" />
+        </div>
+      </div>
+      <br /><br /><br /><br /><br /><br />
+      <section>
+        <div
+          class="col s12 m12 l12 purple darken-2 white-text center-align"
+          style="height: 60rem"
+        >
+          <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+          <h1 class="white-text newfont reveal">
+            ¡<span class="newfont" id="cantidadAssistance">0</span> personas ya
+            han confirmado su asistencia!
+          </h1>
+          <p style="font-size: 2rem" class="white-text newfont reveal">
+            Acompañantes esperados:<span class="newfont" id="cantidadCompanion"
+              >0</span
+            >
+          </p>
+          <div class="col s12 m12 l1">
+            <div class="firework" id="firework1">
+              <div class="explosion"></div>
+              <div class="explosion"></div>
+              <div class="explosion"></div>
+              <div class="explosion"></div>
+              <div class="explosion"></div>
+              <div class="explosion"></div>
+              <div class="explosion"></div>
+              <div class="explosion"></div>
+              <div class="explosion"></div>
+              <div class="explosion"></div>
+              <div class="explosion"></div>
+              <div class="explosion"></div>
             </div>
-        </section>
+          </div>
+          <div class="col l3"></div>
+          <div class="col s12 m12 l1">
+            <div class="firework" id="firework2">
+              <div class="explosion"></div>
+              <div class="explosion"></div>
+              <div class="explosion"></div>
+              <div class="explosion"></div>
+              <div class="explosion"></div>
+              <div class="explosion"></div>
+              <div class="explosion"></div>
+              <div class="explosion"></div>
+              <div class="explosion"></div>
+              <div class="explosion"></div>
+              <div class="explosion"></div>
+              <div class="explosion"></div>
+            </div>
+          </div>
+          <div class="col l3"></div>
+          <div class="col s12 m12 l1">
+            <div class="firework" id="firework3">
+              <div class="explosion"></div>
+              <div class="explosion"></div>
+              <div class="explosion"></div>
+              <div class="explosion"></div>
+              <div class="explosion"></div>
+              <div class="explosion"></div>
+              <div class="explosion"></div>
+              <div class="explosion"></div>
+              <div class="explosion"></div>
+              <div class="explosion"></div>
+              <div class="explosion"></div>
+              <div class="explosion"></div>
+            </div>
+          </div>
+          <div class="col l2"></div>
+          <div class="col s12 m12 l1">
+            <div class="firework" id="firework4">
+              <div class="explosion"></div>
+              <div class="explosion"></div>
+              <div class="explosion"></div>
+              <div class="explosion"></div>
+              <div class="explosion"></div>
+              <div class="explosion"></div>
+              <div class="explosion"></div>
+              <div class="explosion"></div>
+              <div class="explosion"></div>
+              <div class="explosion"></div>
+              <div class="explosion"></div>
+              <div class="explosion"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section title="formulario">
+        <div class="row colorful center-align">
+          <div class="col s12 m12 l12 center-align">
+            <h2 class="black-text newfont reveal">
+              FAVOR DE CONFIRMAR SU ASISTENCIA A LA BREVEDAD POSIBLE
+            </h2>
+          </div>
+          <div class="col l3"></div>
+
+          <form
+            class="col s12 m12 l6 center-align revealZ"
+            action=""
+            id="contactForm"
+          >
+            <div class="row center-align">
+              <div class="input-field col s12 m12 l6">
+                <input
+                  placeholder="Nombre"
+                  id="first_name"
+                  type="text"
+                  class="validate"
+                  pattern="[A-Za-záéíóúñÑ\s]{3,25}"
+                  minlength="3"
+                  maxlength="25"
+                  title="Use solo letras con un minimo de 3 caracteres"
+                  required
+                  required
+                />
+              </div>
+
+              <div class="input-field col s12 m12 l6">
+                <input
+                  placeholder="Apellidos"
+                  id="last_name"
+                  type="text"
+                  class="validate"
+                  pattern="[A-Za-záéíóúñÑ\s]{3,25}"
+                  minlength="3"
+                  maxlength="25"
+                  required
+                />
+              </div>
+
+              <div class="input-field col s12 m12 l12 center-align">
+                <label for="assitence" class="center-align black-text newfont"
+                  >¿VAS A VENIR A MI FIESTA?</label
+                >
+                <br /><br />
+                <div class="col s12 m12 l2"></div>
+
+                <div class="col s6 m6 l4">
+                  <p>
+                    <label>
+                      <input
+                        name="group1"
+                        id="si"
+                        type="radio"
+                        value="Si"
+                        onclick="habilitarInput()"
+                        required
+                      />
+                      <span>Si</span>
+                    </label>
+                  </p>
+                </div>
+                <div class="col s6 m6 l4">
+                  <p>
+                    <label>
+                      <input
+                        name="group1"
+                        id="no"
+                        type="radio"
+                        value="No"
+                        onclick="habilitarInput()"
+                      />
+                      <span>No</span>
+                    </label>
+                  </p>
+                </div>
+                <div class="col s12 m12 l2"></div>
+                <br /><br /><br /><br />
+              </div>
+
+              <div class="input-field col s12 m12 l6 center-align">
+                <input
+                  placeholder="Cantidad de acompañantes"
+                  id="companion"
+                  type="number"
+                  class="validate"
+                  required
+                  min="1"
+                  max="20"
+                />
+                <label class="black-text newfont center-align" for="companion"
+                  >¿LLEVARAS A ALGUN ACOMPAÑANTE?</label
+                >
+              </div>
+
+              <div class="col s12 m12 l12">
+                <div class="input-field col s12">
+                  <textarea
+                    id="message"
+                    class="materialize-textarea"
+                    placeholder="Maximo 500 caracteres"
+                    pattern="[A-Za-záéíóúñÑ\s]"
+                    minlength="15"
+                    maxlength="500"
+                  ></textarea>
+                  <label for="message" class="newfont"
+                    >Enviar Felicitacion</label
+                  >
+                </div>
+              </div>
+
+              <div class="col s12 m12 l12 center-align">
+                <div style="padding-left: 23rem" class="inputBox center">
+                  <button class="button-56" role="button" type="submit">
+                    ENVIAR
+                  </button>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </section>
     </main>
     <footer class="pink darken-2">
-        <div class="row">
-            <div class="col s12 m12 l12">
-                <h3 class="white-text center-align title">- MIS XV AÑOS -</h3>   
-                <h1 class="white-text name center-align">Charliza Eileene</h1>        
+      <div class="row">
+        <div class="popup" id="myPopup">
+          <div class="popup-content center center-align">
+            <img height="200px" width="250px" src="images/giphy.gif" />
+            <p class="black-text newfont" style="font-size: 2rem">
+              ¡TU ASISTENCIA HA SIDO ENVIADA!
+            </p>
+            <br />
+            <br />
+            <br />
+            <div class="col s12 m12 l12 center-align">
+              <button
+                class="waves-effect waves-light btn close"
+                onclick="closePopup()"
+              >
+                OK
+              </button>
             </div>
+          </div>
         </div>
+        <div class="col s12 m12 l12">
+          <h3 class="white-text center-align title">- MIS XV AÑOS -</h3>
+          <h1 class="white-text name center-align">Charliza Eileene</h1>
+        </div>
+      </div>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
     <script src="https://www.gstatic.com/firebasejs/9.0.2/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/9.0.2/firebase-database.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    <script src='/script.js'></script>
+    <script src="/script.js"></script>
     <script>
-        document.addEventListener('DOMContentLoaded', function() {
-          var elems = document.querySelectorAll('.parallax');
-          var instances = M.Parallax.init(elems, {});
+      document.addEventListener("DOMContentLoaded", function () {
+        var elems = document.querySelectorAll(".parallax");
+        var instances = M.Parallax.init(elems, {});
+      });
+
+      function reveal() {
+        var reveals = document.querySelectorAll(".reveal, .revealX, .revealZ");
+
+        for (var i = 0; i < reveals.length; i++) {
+          var windowHeight = window.innerHeight;
+          var elementTop = reveals[i].getBoundingClientRect().top;
+          var elementVisible = 150;
+
+          if (elementTop < windowHeight - elementVisible) {
+            reveals[i].classList.add("active");
+          } else {
+            reveals[i].classList.remove("active");
+          }
+        }
+      }
+
+      window.addEventListener("scroll", reveal);
+
+      document
+        .getElementById("contactForm")
+        .addEventListener("submit", function (event) {
+          event.preventDefault(); // Prevent the form from submitting
+
+          // Show the popup
+          document.getElementById("myPopup").style.display = "block";
         });
 
-        function reveal() {
-  var reveals = document.querySelectorAll(".reveal, .revealX, .revealZ");
-
-  for (var i = 0; i < reveals.length; i++) {
-    var windowHeight = window.innerHeight;
-    var elementTop = reveals[i].getBoundingClientRect().top;
-    var elementVisible = 150;
-
-    if (elementTop < windowHeight - elementVisible) {
-      reveals[i].classList.add("active");
-    } else {
-      reveals[i].classList.remove("active");
-    }
-  }
-}
-
-window.addEventListener("scroll", reveal);
-
-
-
-
-
-      </script>
-</body>
+      function closePopup() {
+        // Hide the popup
+        document.getElementById("myPopup").style.display = "none";
+      }
+    </script>
+  </body>
 </html>
