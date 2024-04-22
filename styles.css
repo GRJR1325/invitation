@@ -201,7 +201,7 @@ body {
 
 .church-image {
   display: flexbox;
-  width: 650px;
+  max-width: 650px;
   height: 600px;
 }
 
