@@ -5,7 +5,7 @@ const firebaseConfig = {
   projectId: "contactform-71728",
   storageBucket: "contactform-71728.appspot.com",
   messagingSenderId: "405847233945",
-  appId: "1:405847233945:web:210d016570126c7dba2f08"
+  appId: "1:405847233945:web:210d016570126c7dba2f08",
 };
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
@@ -14,7 +14,6 @@ firebase.initializeApp(firebaseConfig);
 var contactFormDB = firebase.database().ref("contactForm");
 
 document.getElementById("contactForm").addEventListener("submit", submitForm);
-
 
 function getAssistanceValue() {
   var radios = document.getElementsByName("group1");
@@ -34,9 +33,10 @@ function submitForm(e) {
   var first_name = getElementVal("first_name");
   var last_name = getElementVal("last_name");
   var message = getElementVal("message");
-  var assistance = getAssistanceValue(); // Nuevo
+  var assistance = getAssistanceValue();
+  var companion = getElementVal("companion"); // Nuevo
 
-  saveMessages(first_name, last_name, message, assistance);
+  saveMessages(first_name, last_name, message, assistance, companion);
 
   // Enable alert
   document.querySelector(".alert").style.display = "block";
@@ -51,14 +51,21 @@ function submitForm(e) {
 }
 
 // Function to save form data to Firebase
-const saveMessages = (first_name, last_name, message, assistance) => {
+const saveMessages = (
+  first_name,
+  last_name,
+  message,
+  assistance,
+  companion
+) => {
   var newContactForm = contactFormDB.push();
 
   newContactForm.set({
     first_name: first_name,
     last_name: last_name,
     message: message,
-    assistance:assistance,
+    assistance: assistance,
+    companion: companion,
   });
 };
 
@@ -67,29 +74,50 @@ const getElementVal = (id) => {
   return document.getElementById(id).value;
 };
 
+// Function to get the sum of companion values from all records in Firebase
+function getCantidadCompanion() {
+  contactFormDB.once("value", function (snapshot) {
+    var totalCompanion = 0;
+    snapshot.forEach(function (childSnapshot) {
+      var companion = parseInt(childSnapshot.val().companion); // Convert companion to number
+      if (!isNaN(companion) && companion >= 1 && companion <= 20) {
+        totalCompanion += companion;
+      }
+    });
+    console.log("Total de personas que estarán de compañía: " + totalCompanion);
+    document.getElementById("cantidadCompanion").textContent = totalCompanion;
+  });
+}
+
+// Llama a getCantidadCompanion después de que la página se ha cargado completamente
+window.addEventListener("load", function () {
+  getCantidadCompanion();
+});
+
 // Function to get the number of records with assistance set to "Si" in Firebase
 function getCantidadAssistanceSi() {
-  contactFormDB.once('value', function(snapshot) {
+  contactFormDB.once("value", function (snapshot) {
     var cantidadAssistanceSi = 0;
-    snapshot.forEach(function(childSnapshot) {
+    snapshot.forEach(function (childSnapshot) {
       var assistance = childSnapshot.val().assistance;
       if (assistance === "Si") {
         cantidadAssistanceSi++;
       }
     });
     console.log("Cantidad de personas confirmadas: " + cantidadAssistanceSi);
-    document.getElementById('cantidadAssistance').textContent = cantidadAssistanceSi;
+    document.getElementById("cantidadAssistance").textContent =
+      cantidadAssistanceSi;
   });
 }
 
 // Llama a getCantidadAssistanceSi después de que la página se ha cargado completamente
-window.addEventListener('load', function() {
+window.addEventListener("load", function () {
   getCantidadAssistanceSi();
 });
 
-
 // Fecha de la celebración
 var fechaCelebracion = new Date("2024-07-27T00:00:00");
+fechaCelebracion.setHours(13);
 
 // Función para calcular y mostrar el tiempo restante
 function mostrarTiempoRestante() {
@@ -120,34 +148,32 @@ document.addEventListener("DOMContentLoaded", function () {
   var instances = M.Parallax.init(elems, {});
 });
 
-
 function habilitarInput() {
-  var input = document.getElementById('companion');
-  var siSeleccionado = document.getElementById('si').checked;
+  var input = document.getElementById("companion");
+  var siSeleccionado = document.getElementById("si").checked;
   input.disabled = !siSeleccionado;
 }
 
-document.addEventListener('DOMContentLoaded', function() {
-  var elements = document.querySelectorAll('.element');
+document.addEventListener("DOMContentLoaded", function () {
+  var elements = document.querySelectorAll(".element");
 
-  window.addEventListener('scroll', function() {
-      elements.forEach(function(element) {
-          if (isElementInViewport(element)) {
-              element.classList.add('visible');
-          }
-      });
+  window.addEventListener("scroll", function () {
+    elements.forEach(function (element) {
+      if (isElementInViewport(element)) {
+        element.classList.add("visible");
+      }
+    });
   });
 
   function isElementInViewport(el) {
-      var rect = el.getBoundingClientRect();
+    var rect = el.getBoundingClientRect();
 
-      return (
-          rect.top >= 0 &&
-          rect.left >= 0 &&
-          rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-          rect.right <= (window.innerWidth || document.documentElement.clientWidth)
-      );
+    return (
+      rect.top >= 0 &&
+      rect.left >= 0 &&
+      rect.bottom <=
+        (window.innerHeight || document.documentElement.clientHeight) &&
+      rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+    );
   }
 });
-
-
