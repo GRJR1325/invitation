@@ -116,7 +116,7 @@ window.addEventListener("load", function () {
 });
 
 // Fecha de la celebración
-var fechaCelebracion = new Date("2024-07-27T00:00:00");
+var fechaCelebracion = new Date("2025-02-27T00:00:00");
 fechaCelebracion.setHours(13);
 
 // Función para calcular y mostrar el tiempo restante
